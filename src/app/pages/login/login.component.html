@@ -1,0 +1,37 @@
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal center aligned header">
+      <!-- <img
+        class="image"
+        src="/rootstatic/templates/semantic-ui/login/static/images/logo.png"
+      /> -->
+      Connectez-vous à votre compte
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input name="email" placeholder="Adresse Mail" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input name="password" placeholder="Mot de passe" type="password" />
+          </div>
+        </div>
+        <div
+          class="ui fluid large teal submit button"
+          [routerLink]="['/dashboard']"
+        >
+          Se Connecter
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </form>
+    <div class="ui message">
+      Nouveau utilisateur?<a href=""> Veuillez contacter l'administrateur</a>
+    </div>
+  </div>
+</div>
