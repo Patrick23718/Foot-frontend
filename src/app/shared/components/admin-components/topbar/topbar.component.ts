@@ -14,8 +14,6 @@ export class TopbarComponent implements OnInit {
 
   dropdownbtn() {
     $('.ui.dropdown').dropdown();
-    // $(document).ready(function () {
-    // });
   }
 
   sidebar() {

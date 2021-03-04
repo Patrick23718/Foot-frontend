@@ -3,7 +3,7 @@
   <div class="item">
     <div class="header">General</div>
     <div class="menu">
-      <a class="item">
+      <a class="item" [routerLink]="['/admin/dashboard']">
         <div>
           <i class="icon tachometer alternate"></i>
           Dashboard
@@ -14,16 +14,19 @@
   <div class="item">
     <div class="header">Administration</div>
     <div class="menu">
-      <a class="item">
-        <div><i class="cogs icon"></i>Settings</div>
+      <a class="item" [routerLink]="['/admin/equipes']">
+        <div><i class="users icon"></i>Equipes</div>
       </a>
-      <a class="item">
-        <div><i class="users icon"></i>Team</div>
+      <a class="item" [routerLink]="['/admin/joueurs']">
+        <div><i class="user icon"></i>Joueurs</div>
+      </a>
+      <a class="item" [routerLink]="['/admin/parametres']">
+        <div><i class="cogs icon"></i>Paramètres</div>
       </a>
     </div>
   </div>
 
-  <a class="item">
+  <!-- <a class="item">
     <div>
       <i class="icon chart line"></i>
       Charts
@@ -35,10 +38,16 @@
       <i class="icon lightbulb"></i>
       Apps
     </div>
-  </a>
+  </a> -->
   <div class="item">
-    <div class="header">Other</div>
+    <div class="header">Autres</div>
     <div class="menu">
+      <a class="item" [routerLink]="['/admin/parametres']">
+        <div>
+          <i class="icon cogs"></i>
+          Parametres
+        </div>
+      </a>
       <a class="item">
         <div>
           <i class="icon envelope"></i>
@@ -49,7 +58,7 @@
       <a class="item">
         <div>
           <i class="icon calendar alternate"></i>
-          Calendar
+          Calandrier
         </div>
       </a>
     </div>
@@ -58,7 +67,7 @@
   <div class="item">
     <form action="#">
       <div class="ui mini action input">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Recherche..." />
         <button class="ui mini icon button">
           <i class="search icon"></i>
         </button>
@@ -68,12 +77,12 @@
   <div class="ui segment inverted">
     <div class="ui tiny olive inverted progress">
       <div class="bar" style="width: 54%"></div>
-      <div class="label">Monthly Bandwidth</div>
+      <div class="label">Evolution de la compétition</div>
     </div>
 
     <div class="ui tiny teal inverted progress">
       <div class="bar" style="width: 78%"></div>
-      <div class="label">Disk Usage</div>
+      <div class="label">Niveau de l'équipe</div>
     </div>
   </div>
 </div>
